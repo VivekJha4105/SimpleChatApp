@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.3/socket.io.min.js"
+      integrity="sha512-uxgT9qpJ2dYbAdKgbmD+b9e5rEta2gULQno8q0mm8t7CNLUwIOm7V3ALywTg6dAIbw9JxGi6aa3RCRLRdSW15Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <form class="form-join">
+      <input
+        type="text"
+        id="name"
+        maxlength="8"
+        placeholder="Enter your Name"
+        size="5"
+        required
+      />
+      <input type="text" id="room" placeholder="Chat room" size="5" required />
+      <button type="submit" id="joinBtn">Join</button>
+    </form>
+
+    <ul class="chat-display"></ul>
+
+    <p class="user-list"></p>
+
+    <p class="room-list"></p>
+
+    <p class="activity"></p>
+
+    <form class="form-message">
+      <input
+        type="text"
+        name="message"
+        id="messageInput"
+        placeholder="Enter Your Message"
+      />
+      <button type="submit" id="sendBtn">Send</button>
+    </form>
+  </body>
+</html>
